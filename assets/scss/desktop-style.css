@@ -34,7 +34,10 @@
   body input {
     outline: none;
   }
-  body selection {
+  body select {
+    outline: none;
+  }
+  body textarea {
     outline: none;
   }
   .login-page .login {
@@ -196,6 +199,8 @@
     color: #3554D1;
   }
   .login-page .login .login-right {
+    right: 0;
+    position: fixed;
     width: 50%;
     min-height: 100vh;
     background-color: #3554D1;
@@ -224,6 +229,629 @@
     width: 80%;
     text-align: center;
     line-height: 24px;
+    color: white;
+  }
+  .completeData-page .completeData {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .completeData-page .completeData .complete-left {
+    width: 33%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #3554D1;
+    position: relative;
+  }
+  .completeData-page .completeData .complete-left .content {
+    width: 75%;
+  }
+  .completeData-page .completeData .complete-left .content h3 {
+    margin-top: 40px;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .completeData-page .completeData .complete-left .content .line-proses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .completeData-page .completeData .complete-left .content .line-proses .item-group {
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .completeData-page .completeData .complete-left .content .line-proses .item-group .icon .circle {
+    margin-right: 20px;
+    background-color: white;
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .completeData-page .completeData .complete-left .content .line-proses .item-group .icon .circle i {
+    color: #3554D1;
+  }
+  .completeData-page .completeData .complete-left .content .line-proses .item-group .text h4 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .completeData-page .completeData .complete-left .content .line-proses .item-group .text p {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .completeData-page .completeData .complete-left .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #071535;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .completeData-page .completeData .complete-left .footer .footer-text h4 {
+    color: white;
+    font-size: 14px;
+  }
+  .completeData-page .completeData .complete-left .footer .footer-button button {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  .completeData-page .completeData .complete-right {
+    width: 67%;
+    height: 100vh;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .completeData-page .completeData .complete-right .container {
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: 900ms;
+    transition: 900ms;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .completeData-page .completeData .complete-right .container1 {
+    top: -100vh;
+    -webkit-transition: 900ms;
+    transition: 900ms;
+  }
+  .completeData-page .completeData .complete-right .container2 {
+    top: -200vh;
+    -webkit-transition: 900ms;
+    transition: 900ms;
+  }
+  .completeData-page .completeData .complete-right .form {
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .completeData-page .completeData .complete-right .form .content {
+    width: 85%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .completeData-page .completeData .complete-right .form-1 .content .image {
+    margin-top: 40px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .completeData-page .completeData .complete-right .form-1 .content .image img {
+    width: 340px;
+  }
+  .completeData-page .completeData .complete-right .form-1 .content h2 {
+    width: 450px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .completeData-page .completeData .complete-right .form-1 .content p {
+    width: 650px;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .completeData-page .completeData .complete-right .form-1 .content button {
+    height: 45px;
+    width: 200px;
+    border-radius: 30px;
+    border: 2px solid #3554D1;
+    background-color: #3554D1;
+    color: white;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content p {
+    width: 650px;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata {
+    width: 80%;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .col-6 {
+    width: 49%;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .col-12 {
+    width: 100%;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group label {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group input {
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #A5AEBC;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group select {
+    height: 35px;
+    border: 1px solid #A5AEBC;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group textarea {
+    border: 1px solid #A5AEBC;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group input:focus {
+    border: 1px solid #3554D1;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group select:focus {
+    border: 1px solid #3554D1;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group textarea:focus {
+    border: 1px solid #3554D1;
+  }
+  .readData-page {
+    width: 100%;
+    height: 100vh;
+  }
+  .readData-page .bg-main {
+    position: absolute;
+    background-color: #071535;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    height: 550px;
+    width: 100%;
+    z-index: 1;
+  }
+  .readData-page .main {
+    width: 100%;
+    height: 550px;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+  }
+  .readData-page .main .content {
+    width: 90%;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .readData-page .main .content .content-left {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .readData-page .main .content .content-left h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .readData-page .main .content .content-left h1 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #3554D1;
+  }
+  .readData-page .main .content .content-left p {
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  .readData-page .table-section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 80px;
+  }
+  .readData-page .table-section .content {
+    width: 90%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 500px;
+  }
+  .readData-page .table-section .content .table {
+    position: relative;
+    z-index: 1;
+    top: -80px;
+    width: 80%;
+    min-height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    -webkit-box-shadow: 0px 30px 60px rgba(7, 21, 53, 0.1);
+            box-shadow: 0px 30px 60px rgba(7, 21, 53, 0.1);
+    border-radius: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .readData-page .table-section .content .table table {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .readData-page .table-section .content .table table thead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .readData-page .table-section .content .table table thead tr {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .readData-page .table-section .content .table table thead tr .rank {
+    width: 7%;
+  }
+  .readData-page .table-section .content .table table thead tr th {
+    width: 24%;
+    text-align: left;
+    font-weight: 500;
+  }
+  .readData-page .table-section .content .table table thead tr .skor {
+    width: 15%;
+  }
+  .readData-page .table-section .content .table table tbody {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .readData-page .table-section .content .table table tbody tr {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid rgba(7, 21, 53, 0.1);
+  }
+  .readData-page .table-section .content .table table tbody tr th {
+    width: 7%;
+    text-align: left;
+    font-weight: 500;
+  }
+  .readData-page .table-section .content .table table tbody tr td {
+    width: 24%;
+    text-align: left;
+    font-weight: 400;
+  }
+  .readData-page .table-section .content .table table tbody tr .skor {
+    width: 15%;
+  }
+  .readData-page .table-section .content .table table tbody tr .skor .badge {
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+  .readData-page .table-section .content .table table tbody tr .skor .badge-danger {
+    background-color: orange;
+  }
+  .readData-page .table-section .content .table table tbody tr .skor .badge-warning {
+    background-color: #3554D1;
+  }
+  .readData-page .table-section .content .table table tbody hr {
+    height: 1px;
+  }
+  .readData-page .form-section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 80px;
+  }
+  .readData-page .form-section .content {
+    width: 90%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 500px;
+  }
+  .readData-page .form-section .content .form-box {
+    position: relative;
+    z-index: 1;
+    top: -80px;
+    width: 80%;
+    min-height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    -webkit-box-shadow: 0px 30px 60px rgba(7, 21, 53, 0.1);
+            box-shadow: 0px 30px 60px rgba(7, 21, 53, 0.1);
+    border-radius: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .readData-page .form-section .content .form-box h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+  .readData-page .form-section .content .form-box p {
+    width: 650px;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .readData-page .form-section .content .form-box .form-biodata {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .col-6 {
+    width: 49%;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .col-12 {
+    width: 100%;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .form-group label {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .form-group input {
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #A5AEBC;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .form-group select {
+    height: 44px;
+    border: 1px solid #A5AEBC;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .form-group textarea {
+    border: 1px solid #A5AEBC;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .form-group input:focus {
+    border: 1px solid #3554D1;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .form-group select:focus {
+    border: 1px solid #3554D1;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .form-group textarea:focus {
+    border: 1px solid #3554D1;
+  }
+  .readData-page .form-section .content .form-box .form-biodata button {
+    margin-top: 20px;
+    height: 45px;
+    width: 200px;
+    border-radius: 30px;
+    border: 2px solid #3554D1;
+    background-color: #3554D1;
     color: white;
   }
   #mobile {
