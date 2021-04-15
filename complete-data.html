@@ -26,7 +26,7 @@
                 <h3>Petikdua</h3>
 
                 <div class="line-proses">
-                    <div class="item-group">
+                    <div class="item-group item-group-1 active">
                         <div class="icon">
                             <div class="circle">
                                 <i class="fa fa-check"></i>
@@ -37,7 +37,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. uasi quaerat provident?</p>
                         </div>
                     </div>
-                    <div class="item-group">
+                    <div class="item-group item-group-2">
                         <div class="icon">
                             <div class="circle">
                                 <i class="fa fa-check"></i>
@@ -48,7 +48,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. uasi quaerat provident?</p>
                         </div>
                     </div>
-                    <div class="item-group">
+                    <div class="item-group item-group-3">
                         <div class="icon">
                             <div class="circle">
                                 <i class="fa fa-check"></i>
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="complete-right">
-            <form class="container container2" action="" method="POST">
+            <form class="container" action="" method="POST">
                 <section class="form form-1">
                     <div class="content">
                         <div class="image">
@@ -81,7 +81,7 @@
                         <h2>Launch Insert Form</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias accusantium atque
                             perspiciatis quae est veniam iusto laboriosam. Perspiciatis!</p>
-                        <button class="btn-start">Get Start!</button>
+                        <button type="button" class="btn-start">Get Start!</button>
                     </div>
                 </section>
 
@@ -91,17 +91,39 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis!</p>
 
                         <div class="form-biodata">
+                            <div class="row" style="display: none;">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="email" value="" name="email" id="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="password" value="" name="password" id="password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" value="" name="telp" id="telp">
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="">First Name</label>
-                                        <input type="text">
+                                        <input type="text" value="" name="fname" id="fname">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="">Last Name</label>
-                                        <input type="text">
+                                        <input type="text" name="lname" id="lname">
                                     </div>
                                 </div>
                             </div>
@@ -109,13 +131,13 @@
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="">University</label>
-                                        <input type="text">
+                                        <input type="text" name="university" id="university">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="">Major</label>
-                                        <input type="text">
+                                        <input type="text" name="major" id="major">
                                     </div>
                                 </div>
                             </div>
@@ -123,13 +145,13 @@
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="">Place of birth</label>
-                                        <input type="text">
+                                        <input type="text" name="placeBirth" id="placeBirth">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="">Date of birth</label>
-                                        <input type="date">
+                                        <input type="date" name="dateBirth" id="dateBirth">
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +159,7 @@
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="">Gender</label>
-                                        <select name="" id="">
+                                        <select name="gender" id="" id="gender">
                                             <option value="">Male</option>
                                             <option value="">Female</option>
                                         </select>
@@ -146,7 +168,7 @@
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="">Zip Code</label>
-                                        <input type="number">
+                                        <input type="number" name="zipcode" id="zipcode">
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +176,16 @@
                                 <div class="col-12">
                                     <div class="form-group">
                                         <label for="">Address</label>
-                                        <textarea name="" id="" cols="30" rows="4"></textarea>
+                                        <textarea name="address" id="address" cols="30" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <div class="icon" id="btn-down">
+                                            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

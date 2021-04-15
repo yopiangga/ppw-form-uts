@@ -277,6 +277,47 @@
             align-items: flex-start;
   }
   .completeData-page .completeData .complete-left .content .line-proses .item-group {
+    cursor: pointer;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .completeData-page .completeData .complete-left .content .line-proses .item-group .icon .circle {
+    margin-right: 20px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    height: 30px;
+    width: 30px;
+    border-radius: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .completeData-page .completeData .complete-left .content .line-proses .item-group .icon .circle i {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .completeData-page .completeData .complete-left .content .line-proses .item-group .text h4 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .completeData-page .completeData .complete-left .content .line-proses .item-group .text p {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .completeData-page .completeData .complete-left .content .line-proses .item-group.active {
     margin-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -286,7 +327,7 @@
             align-items: center;
     color: white;
   }
-  .completeData-page .completeData .complete-left .content .line-proses .item-group .icon .circle {
+  .completeData-page .completeData .complete-left .content .line-proses .item-group.active .icon .circle {
     margin-right: 20px;
     background-color: white;
     border: 2px solid white;
@@ -303,18 +344,8 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .completeData-page .completeData .complete-left .content .line-proses .item-group .icon .circle i {
+  .completeData-page .completeData .complete-left .content .line-proses .item-group.active .icon .circle i {
     color: #3554D1;
-  }
-  .completeData-page .completeData .complete-left .content .line-proses .item-group .text h4 {
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  .completeData-page .completeData .complete-left .content .line-proses .item-group .text p {
-    line-height: 24px;
-    font-size: 14px;
   }
   .completeData-page .completeData .complete-left .footer {
     position: absolute;
@@ -443,6 +474,7 @@
     border: 2px solid #3554D1;
     background-color: #3554D1;
     color: white;
+    cursor: pointer;
   }
   .completeData-page .completeData .complete-right .form-2 .content h2 {
     font-size: 28px;
@@ -484,6 +516,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
   }
   .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group label {
     margin-bottom: 10px;
@@ -516,6 +549,27 @@
   }
   .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group textarea:focus {
     border: 1px solid #3554D1;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group .icon {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group .icon i {
+    left: 50%;
+    right: 50%;
+    top: 0px;
+    position: absolute;
+    color: #3554D1;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    font-size: 20px;
+  }
+  .completeData-page .completeData .complete-right .form-2 .content .form-biodata .row .form-group .icon:hover i {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    top: 5px;
   }
   .readData-page {
     width: 100%;
