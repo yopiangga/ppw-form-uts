@@ -1,3 +1,22 @@
+<?php
+
+$email = "";
+$password = "";
+$telp = "";
+
+if (isset($_POST['submit'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $telp = $_POST['telp'];
+}
+
+if($email == "" && $password == ""){
+    header("location: ./../register.php");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +24,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/css-reset.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/scss/desktop-style.css">
-    <link rel="stylesheet" href="assets/scss/tablet-style.css">
-    <link rel="stylesheet" href="assets/scss/mobileLandscape-style.css">
-    <link rel="stylesheet" href="assets/scss/mobile-style.css">
-    <link rel="stylesheet" href="assets/js/aos/aos.css">
+    <link rel="stylesheet" href="./../assets/css/css-reset.css">
+    <link rel="stylesheet" href="./../assets/fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./../assets/scss/desktop-style.css">
+    <link rel="stylesheet" href="./../assets/scss/tablet-style.css">
+    <link rel="stylesheet" href="./../assets/scss/mobileLandscape-style.css">
+    <link rel="stylesheet" href="./../assets/scss/mobile-style.css">
+    <link rel="stylesheet" href="./../assets/js/aos/aos.css">
 
     <title>Complete Record - Petikdua</title>
 </head>
@@ -72,11 +91,11 @@
             </div>
         </div>
         <div class="complete-right">
-            <form class="container" action="" method="POST">
+            <form class="container" action="./config_insert.php" method="POST">
                 <section class="form form-1">
                     <div class="content">
                         <div class="image">
-                            <img src="./assets/images/start-form.png" alt="">
+                            <img src="./../assets/images/start-form.png" alt="">
                         </div>
                         <h2>Launch Insert Form</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias accusantium atque
@@ -94,25 +113,25 @@
                             <div class="row" style="display: none;">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input type="email" value="" name="email" id="email">
+                                        <input type="email" value="<?= $email ?>" name="email" id="email">
                                     </div>
                                 </div>
                             </div>
                             <div class="row" style="display: none;">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input type="password" value="" name="password" id="password">
+                                        <input type="password" value="<?= $password ?>" name="password" id="password">
                                     </div>
                                 </div>
                             </div>
                             <div class="row" style="display: none;">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input type="text" value="" name="telp" id="telp">
+                                        <input type="text" value="<?= $telp ?>" name="telp" id="telp">
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-group">
@@ -160,8 +179,8 @@
                                     <div class="form-group">
                                         <label for="">Gender</label>
                                         <select name="gender" id="" id="gender">
-                                            <option value="">Male</option>
-                                            <option value="">Female</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
                                         </select>
                                     </div>
                                 </div>
@@ -196,12 +215,12 @@
                 <section class="form form-1">
                     <div class="content">
                         <div class="image">
-                            <img src="./assets/images/form-1.png" alt="">
+                            <img src="././../assets/images/form-1.png" alt="">
                         </div>
                         <h2>Okey, Last Step!</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias accusantium atque
                             perspiciatis quae est veniam iusto laboriosam. Perspiciatis!</p>
-                        <button class="btn-submit" name="submit">SUBMIT</button>
+                        <button class="btn-submit" type="submit" name="submit">SUBMIT</button>
                     </div>
                 </section>
             </form>
@@ -209,10 +228,12 @@
 
     </div>
 
-    <script src="assets/js/aos/aos.js"></script>
-    <script>AOS.init()</script>
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/style.js"></script>
+    <script src="./../assets/js/aos/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
+    <script src="./../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./../assets/js/style.js"></script>
 </body>
 
 </html>

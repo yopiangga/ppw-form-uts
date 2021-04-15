@@ -710,7 +710,7 @@
             justify-content: space-between;
   }
   .readData-page .table-section .content .table table thead tr .rank {
-    width: 7%;
+    width: 3%;
   }
   .readData-page .table-section .content .table table thead tr th {
     width: 24%;
@@ -718,7 +718,7 @@
     font-weight: 500;
   }
   .readData-page .table-section .content .table table thead tr .skor {
-    width: 15%;
+    width: 20%;
   }
   .readData-page .table-section .content .table table tbody {
     display: -webkit-box;
@@ -743,7 +743,7 @@
     border-top: 1px solid rgba(7, 21, 53, 0.1);
   }
   .readData-page .table-section .content .table table tbody tr th {
-    width: 7%;
+    width: 4%;
     text-align: left;
     font-weight: 500;
   }
@@ -753,7 +753,7 @@
     font-weight: 400;
   }
   .readData-page .table-section .content .table table tbody tr .skor {
-    width: 15%;
+    width: 23%;
   }
   .readData-page .table-section .content .table table tbody tr .skor .badge {
     padding: 5px 10px 5px 10px;
@@ -763,9 +763,12 @@
     font-size: 14px;
   }
   .readData-page .table-section .content .table table tbody tr .skor .badge-danger {
-    background-color: orange;
+    background-color: salmon;
   }
   .readData-page .table-section .content .table table tbody tr .skor .badge-warning {
+    background-color: orange;
+  }
+  .readData-page .table-section .content .table table tbody tr .skor .badge-primary {
     background-color: #3554D1;
   }
   .readData-page .table-section .content .table table tbody hr {

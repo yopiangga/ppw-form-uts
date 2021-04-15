@@ -690,7 +690,7 @@ $colorBlack : #000000;
                                 justify-content: space-between;
 
                                 .rank {
-                                    width: 7%;
+                                    width: 3%;
                                 }
 
                                 th {
@@ -700,7 +700,7 @@ $colorBlack : #000000;
                                 }
 
                                 .skor {
-                                    width: 15%;
+                                    width: 20%;
                                 }
                             }
                         }
@@ -719,7 +719,7 @@ $colorBlack : #000000;
                                 border-top: 1px solid rgba($color: $colorDark, $alpha: 0.1);
                                 
                                 th {
-                                    width: 7%;
+                                    width: 4%;
                                     text-align: left;
                                     font-weight: 500;
                                 }
@@ -731,7 +731,7 @@ $colorBlack : #000000;
                                 }
 
                                 .skor {
-                                    width: 15%;
+                                    width: 23%;
 
                                     .badge {
                                         padding: 5px 10px 5px 10px;
@@ -742,10 +742,14 @@ $colorBlack : #000000;
                                     }
 
                                     .badge-danger {
-                                        background-color: orange;
+                                        background-color: salmon;
                                     }
 
                                     .badge-warning {
+                                        background-color: orange;
+                                    }
+
+                                    .badge-primary {
                                         background-color: $colorPrimary;
                                     }
                                 }

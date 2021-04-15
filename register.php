@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/scss/mobile-style.css">
     <link rel="stylesheet" href="assets/js/aos/aos.css">
 
-    <title>Login - Petikdua</title>
+    <title>Create Account - Petikdua</title>
 </head>
 <body class="login-page">
     
@@ -20,30 +20,35 @@
         <div class="login-left">
             <div class="content">
                 <h3>Petikdua</h3>
-                <h1>Hi, Welcome Back!</h1>
+                <h1>Get Started with Petikdua</h1>
                 <p>Start your account with special menu.</p>
 
-                <button class="btn-google"> <img src="https://img-authors.flaticon.com/google.jpg" alt=""> Sign in with Google</button>
+                <button class="btn-google"> <img src="https://img-authors.flaticon.com/google.jpg" alt=""> Sign Up with Google</button>
                 <div class="choice-login">
                     <hr>
-                    <h6>Or Sign In Email</h6>
+                    <h6>Or Sign Up Email</h6>
                     <hr>
                 </div>
 
-                <form action="">
+                <form action="./insert/complete-data.php" method="POST">
                     <div class="form-group">
                         <label>Email address</label>
                         <i class="fa fa-user"></i>
-                        <input type="email" placeholder="example@petikdua.com">
+                        <input type="email" placeholder="example@petikdua.com" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <i class="fa fa-phone"></i>
+                        <input type="text" placeholder="+62 823 3041 0865" name="telp">
                     </div>
                     <div class="form-group">
                         <label>Password</label>
                         <i class="fa fa-lock"></i>
-                        <input type="password" placeholder="min 6 character">
+                        <input type="password" placeholder="min 6 character" name="password">
                     </div>
-                    <button class="btn-login">Login</button>
+                    <button class="btn-login" type="submit" name="submit">Register</button>
 
-                    <h6>Not registered yet? <a href="./register.html">Create an Account</a></h6>
+                    <h6>Have an Account? <a href="./login.php">Login</a></h6>
                 </form>
             </div>
         </div>
