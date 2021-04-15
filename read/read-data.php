@@ -65,7 +65,7 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa ORDER BY id ASC");
                             <td class="skor">
                                 <a href="./../delete/config_delete.php?id=<?=$mahasiswa['id']?>" class="badge badge-danger">Delete</a>
                                 <a href="./../update/edit-data.php?id=<?=$mahasiswa['id']?>" class="badge badge-warning">Edit</a>
-                                <a href="./../read/detail_student.php?id=<?=$mahasiswa['id']?>" class="badge badge-primary">Detail</a>
+                                <a href="./../read/detail-student.php?id=<?=$mahasiswa['id']?>" class="badge badge-primary">Detail</a>
                             </td>
                         </tr>
                     <?php } ?>

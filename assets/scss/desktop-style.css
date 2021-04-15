@@ -605,6 +605,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .readData-page .main .content .content-left {
     width: 100%;
@@ -910,6 +913,122 @@
     border: 2px solid #3554D1;
     background-color: #3554D1;
     color: white;
+  }
+  .detailStudent-page {
+    width: 100%;
+    height: 100vh;
+  }
+  .detailStudent-page .bg-main {
+    position: absolute;
+    background-color: #071535;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    height: 550px;
+    width: 100%;
+    z-index: 1;
+  }
+  .detailStudent-page .form-section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 0px;
+  }
+  .detailStudent-page .form-section .content {
+    width: 90%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .detailStudent-page .form-section .content .form-box {
+    position: relative;
+    z-index: 1;
+    top: 60px;
+    width: 80%;
+    min-height: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    -webkit-box-shadow: 0px 30px 60px rgba(7, 21, 53, 0.1);
+            box-shadow: 0px 30px 60px rgba(7, 21, 53, 0.1);
+    border-radius: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .detailStudent-page .form-section .content .form-box h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+  .detailStudent-page .form-section .content .form-box p {
+    width: 650px;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .detailStudent-page .form-section .content .form-box .form-biodata {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .detailStudent-page .form-section .content .form-box .form-biodata .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .detailStudent-page .form-section .content .form-box .form-biodata .row .col-6 {
+    width: 49%;
+  }
+  .detailStudent-page .form-section .content .form-box .form-biodata .row .col-12 {
+    width: 100%;
+  }
+  .detailStudent-page .form-section .content .form-box .form-biodata .row .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .detailStudent-page .form-section .content .form-box .form-biodata .row .form-group label {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .detailStudent-page .form-section .content .form-box .form-biodata .row .form-group h4 {
+    font-weight: 500;
+    font-size: 16px;
   }
   #mobile {
     display: none;
