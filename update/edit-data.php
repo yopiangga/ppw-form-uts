@@ -58,7 +58,7 @@ if (mysqli_num_rows($query) < 1) {
                 <h2>Edit Biodata</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis!</p>
 
-                <form class="form-biodata" action="./config_update.php" method="POST">
+                <form class="form-biodata" action="./config_update.php?id=<?=$id?>" method="POST">
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">

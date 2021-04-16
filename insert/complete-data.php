@@ -52,8 +52,8 @@ if($email == "" && $password == ""){
                             </div>
                         </div>
                         <div class="text">
-                            <h4>Insert name and address</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. uasi quaerat provident?</p>
+                            <h4>Run the Aplication Form</h4>
+                            <p>Start filling out forms quickly on Aplication Form</p>
                         </div>
                     </div>
                     <div class="item-group item-group-2">
@@ -63,8 +63,8 @@ if($email == "" && $password == ""){
                             </div>
                         </div>
                         <div class="text">
-                            <h4>Insert name and address</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. uasi quaerat provident?</p>
+                            <h4>Complete the data</h4>
+                            <p>Enter data in accordance with personal data</p>
                         </div>
                     </div>
                     <div class="item-group item-group-3">
@@ -74,8 +74,8 @@ if($email == "" && $password == ""){
                             </div>
                         </div>
                         <div class="text">
-                            <h4>Insert name and address</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. uasi quaerat provident?</p>
+                            <h4>Submit it to us</h4>
+                            <p>Submit your data via the form to us by clicking submit</p>
                         </div>
                     </div>
                 </div>

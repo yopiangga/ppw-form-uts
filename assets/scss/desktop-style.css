@@ -200,7 +200,6 @@
   }
   .login-page .login .login-right {
     right: 0;
-    position: fixed;
     width: 50%;
     min-height: 100vh;
     background-color: #3554D1;
