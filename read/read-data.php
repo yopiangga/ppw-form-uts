@@ -1,6 +1,8 @@
 
 <?php
 
+session_start();
+
 include("./../config/connection.php");
 
 $result = mysqli_query($conn, "SELECT * FROM mahasiswa ORDER BY id ASC");
@@ -63,8 +65,13 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa ORDER BY id ASC");
                             <td><?= $mahasiswa['university'] ?></td>
                             <td><?= $mahasiswa['major'] ?></td>
                             <td class="skor">
-                                <a href="./../delete/config_delete.php?id=<?=$mahasiswa['id']?>" class="badge badge-danger">Delete</a>
-                                <a href="./../update/edit-data.php?id=<?=$mahasiswa['id']?>" class="badge badge-warning">Edit</a>
+                                <?php 
+                                    if($_SESSION['status'] == "login"){
+                                ?>
+                                    <a href="./../delete/config_delete.php?id=<?=$mahasiswa['id']?>" class="badge badge-danger">Delete</a>
+                                    <a href="./../update/edit-data.php?id=<?=$mahasiswa['id']?>" class="badge badge-warning">Edit</a>
+                                <?php } ?>
+
                                 <a href="./../read/detail-student.php?id=<?=$mahasiswa['id']?>" class="badge badge-primary">Detail</a>
                             </td>
                         </tr>

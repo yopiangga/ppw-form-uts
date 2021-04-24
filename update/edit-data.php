@@ -1,7 +1,9 @@
 <?php
 include("./../config/connection.php");
 
-if (!isset($_GET['id'])) {
+session_start();
+
+if (!isset($_GET['id']) || $_SESSION['status'] != "login") {
     header('Location: ./../read/read-data.php');
 }
 
