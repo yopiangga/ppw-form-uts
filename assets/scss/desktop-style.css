@@ -642,6 +642,29 @@
     line-height: 28px;
     margin-bottom: 30px;
   }
+  .readData-page .main .content .content-left button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    width: 200px;
+    background-color: #3554D1;
+    border: 1px solid #3554D1;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .readData-page .main .content .content-left button:hover {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: #071535;
+    color: white;
+    border: 1px solid #3554D1;
+  }
   .readData-page .table-section {
     width: 100%;
     display: -webkit-box;
@@ -756,6 +779,12 @@
   }
   .readData-page .table-section .content .table table tbody tr .skor {
     width: 23%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .readData-page .table-section .content .table table tbody tr .skor .badge {
     padding: 5px 10px 5px 10px;
@@ -763,6 +792,8 @@
     text-decoration: none;
     color: white;
     font-size: 14px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
   .readData-page .table-section .content .table table tbody tr .skor .badge-danger {
     background-color: salmon;

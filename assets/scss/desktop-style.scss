@@ -1,45 +1,45 @@
 @media only screen and (min-width: 1024px) {
 
 
-@font-face {
-    font-family: "Poppins";
-    src: url('../fonts/poppins/Poppins-Regular.ttf');
-    font-weight: 400;
-}
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Regular.ttf');
+        font-weight: 400;
+    }
 
-@font-face {
-    font-family: "Poppins";
-    src: url('../fonts/poppins/Poppins-Medium.ttf');
-    font-weight: 500;
-}
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Medium.ttf');
+        font-weight: 500;
+    }
 
-@font-face {
-    font-family: "Poppins";
-    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
-    font-weight: 600;
-}
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+        font-weight: 600;
+    }
 
-@font-face {
-    font-family: "Poppins";
-    src: url('../fonts/poppins/Poppins-Bold.ttf');
-    font-weight: 700;
-}
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Bold.ttf');
+        font-weight: 700;
+    }
 
-@font-face {
-    font-family: "Poppins";
-    src: url('../fonts/poppins/Poppins-Italic.ttf');
-    font-style: italic;
-}
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Italic.ttf');
+        font-style: italic;
+    }
 
-$fontPrimary : "Poppins";
+    $fontPrimary : "Poppins";
 
-$colorPrimary : #3554D1;
-$colorBlueLight : #CDEEF6;
-$colorGrayOld : #5D667B;
-$colorGray : #A5AEBC;
-$colorLight : #F2F4F7;
-$colorDark : #071535;
-$colorBlack : #000000;
+    $colorPrimary : #3554D1;
+    $colorBlueLight : #CDEEF6;
+    $colorGrayOld : #5D667B;
+    $colorGray : #A5AEBC;
+    $colorLight : #F2F4F7;
+    $colorDark : #071535;
+    $colorBlack : #000000;
 
     body {
         font-family: $fontPrimary;
@@ -104,7 +104,7 @@ $colorBlack : #000000;
 
                     .btn-google {
                         width: 100%;
-                        height: 50px; 
+                        height: 50px;
                         color: $colorDark;
                         background-color: white;
                         border: 1px solid $colorLight;
@@ -188,7 +188,7 @@ $colorBlack : #000000;
 
                         .btn-login {
                             width: 100%;
-                            height: 50px; 
+                            height: 50px;
                             color: white;
                             background-color: $colorPrimary;
                             border: 1px solid $colorPrimary;
@@ -267,7 +267,7 @@ $colorBlack : #000000;
                 justify-content: center;
                 background-color: $colorPrimary;
                 position: relative;
-                
+
                 .content {
                     width: 75%;
 
@@ -278,7 +278,7 @@ $colorBlack : #000000;
                         line-height: 28px;
                         font-weight: 500;
                         margin-bottom: 50px;
-                    }  
+                    }
 
                     .line-proses {
                         display: flex;
@@ -289,11 +289,11 @@ $colorBlack : #000000;
                             cursor: pointer;
                             margin-bottom: 30px;
                             display: flex;
-                            align-items: center ;
+                            align-items: center;
                             color: rgba($color: white, $alpha: 0.7);
 
                             .icon {
-                                
+
                                 .circle {
                                     margin-right: 20px;
                                     background-color: transparent;
@@ -304,7 +304,7 @@ $colorBlack : #000000;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-    
+
                                     i {
                                         color: rgba($color: white, $alpha: 0.7);
                                     }
@@ -315,9 +315,9 @@ $colorBlack : #000000;
 
                                 h4 {
                                     font-size: 16px;
-                                    line-height: 28px; 
+                                    line-height: 28px;
                                     font-weight: 500;
-                                    margin-bottom: 5px;     
+                                    margin-bottom: 5px;
                                 }
 
                                 p {
@@ -326,11 +326,11 @@ $colorBlack : #000000;
                                 }
                             }
                         }
-                        
+
                         .item-group.active {
                             margin-bottom: 30px;
                             display: flex;
-                            align-items: center ;
+                            align-items: center;
                             color: white;
 
                             .icon {
@@ -344,7 +344,7 @@ $colorBlack : #000000;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-    
+
                                     i {
                                         color: $colorPrimary;
                                     }
@@ -387,13 +387,13 @@ $colorBlack : #000000;
             .complete-right {
                 width: 67%;
                 height: 100vh;
-                background-color:  white;
+                background-color: white;
                 display: flex;
                 justify-content: center;
                 position: relative;
                 overflow: hidden;
 
-                .container{
+                .container {
                     width: 100%;
                     height: 1000px;
                     position: absolute;
@@ -432,7 +432,7 @@ $colorBlack : #000000;
                 .form-1 {
 
                     .content {
-                        
+
                         .image {
                             margin-top: 40px;
                             width: 100%;
@@ -475,7 +475,7 @@ $colorBlack : #000000;
                 }
 
                 .form-2 {
-                    
+
                     .content {
 
                         h2 {
@@ -589,7 +589,7 @@ $colorBlack : #000000;
     .readData-page {
         width: 100%;
         height: 100vh;
-        
+
         .bg-main {
             position: absolute;
             background-color: $colorDark;
@@ -644,6 +644,28 @@ $colorBlack : #000000;
                         margin-bottom: 30px;
                     }
 
+                    button {
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding: 10px 10px 10px 10px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 14px;
+                        width: 200px;
+                        background-color: $colorPrimary;
+                        border: 1px solid $colorPrimary;
+                        transition: 300ms;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+
+                    button:hover {
+                        transition: 300ms;
+                        background-color: $colorDark;
+                        color: white;
+                        border: 1px solid $colorPrimary;
+                    }
                 }
             }
         }
@@ -653,7 +675,7 @@ $colorBlack : #000000;
             display: flex;
             justify-content: center;
             padding-bottom: 80px;
-            
+
             .content {
                 width: 90%;
                 position: relative;
@@ -719,7 +741,7 @@ $colorBlack : #000000;
                                 justify-content: space-between;
                                 padding-top: 20px;
                                 border-top: 1px solid rgba($color: $colorDark, $alpha: 0.1);
-                                
+
                                 th {
                                     width: 4%;
                                     text-align: left;
@@ -734,6 +756,8 @@ $colorBlack : #000000;
 
                                 .skor {
                                     width: 23%;
+                                    display: flex;
+                                    justify-content: center;
 
                                     .badge {
                                         padding: 5px 10px 5px 10px;
@@ -741,6 +765,8 @@ $colorBlack : #000000;
                                         text-decoration: none;
                                         color: white;
                                         font-size: 14px;
+                                        margin-left: 2px;
+                                        margin-right: 2px;
                                     }
 
                                     .badge-danger {
@@ -771,7 +797,7 @@ $colorBlack : #000000;
             display: flex;
             justify-content: center;
             padding-bottom: 80px;
-            
+
             .content {
                 width: 90%;
                 position: relative;
@@ -896,7 +922,7 @@ $colorBlack : #000000;
     .detailStudent-page {
         width: 100%;
         height: 100vh;
-        
+
         .bg-main {
             position: absolute;
             background-color: $colorDark;
@@ -911,7 +937,7 @@ $colorBlack : #000000;
             display: flex;
             justify-content: center;
             padding-bottom: 0px;
-            
+
             .content {
                 width: 90%;
                 position: relative;

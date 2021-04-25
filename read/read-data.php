@@ -1,9 +1,12 @@
-
 <?php
 
 session_start();
 
 include("./../config/connection.php");
+
+if ($_SESSION['status'] != "login") {
+    $_SESSION['status'] = "";
+}
 
 $result = mysqli_query($conn, "SELECT * FROM mahasiswa ORDER BY id ASC");
 
@@ -38,11 +41,18 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa ORDER BY id ASC");
                     <h4>PETIKDUA</h4>
                     <h1>DATA STUDENTS</h1>
                     <p>Students Exchange - Australia</p>
+                    <?php
+                    if ($_SESSION['status'] == "login") {
+                    ?>
+                        <button onclick="window.location.href='./../insert/insert-data.php'">Insert Data</button>
+                    <?php } else { ?>
+                        <button onclick="window.location.href='./../auth/login.php'">Login</button>
+                    <?php } ?>
                 </div>
             </div>
         </section>
     </div>
-    
+
     <div class="table-section">
         <div class="content">
             <div class="table">
@@ -57,26 +67,26 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa ORDER BY id ASC");
                         </tr>
                     </thead>
                     <tbody>
-                    <?php
-                    while($mahasiswa = mysqli_fetch_array($result)) { ?>
-                        <tr>
-                            <th><?= $mahasiswa['id'] ?></th>
-                            <td><?= $mahasiswa['fname']. " " . $mahasiswa['lname'] ?></td>
-                            <td><?= $mahasiswa['university'] ?></td>
-                            <td><?= $mahasiswa['major'] ?></td>
-                            <td class="skor">
-                                <?php 
-                                    if($_SESSION['status'] == "login"){
-                                ?>
-                                    <a href="./../delete/config_delete.php?id=<?=$mahasiswa['id']?>" class="badge badge-danger">Delete</a>
-                                    <a href="./../update/edit-data.php?id=<?=$mahasiswa['id']?>" class="badge badge-warning">Edit</a>
-                                <?php } ?>
+                        <?php
+                        while ($mahasiswa = mysqli_fetch_array($result)) { ?>
+                            <tr>
+                                <th><?= $mahasiswa['id'] ?></th>
+                                <td><?= $mahasiswa['fname'] . " " . $mahasiswa['lname'] ?></td>
+                                <td><?= $mahasiswa['university'] ?></td>
+                                <td><?= $mahasiswa['major'] ?></td>
+                                <td class="skor">
+                                    <?php
+                                    if ($_SESSION['status'] == "login") {
+                                    ?>
+                                        <a href="./../delete/config_delete.php?id=<?= $mahasiswa['id'] ?>" class="badge badge-danger">Delete</a>
+                                        <a href="./../update/edit-data.php?id=<?= $mahasiswa['id'] ?>" class="badge badge-warning">Edit</a>
+                                    <?php } ?>
 
-                                <a href="./../read/detail-student.php?id=<?=$mahasiswa['id']?>" class="badge badge-primary">Detail</a>
-                            </td>
-                        </tr>
-                    <?php } ?>
-                        
+                                    <a href="./../read/detail-student.php?id=<?= $mahasiswa['id'] ?>" class="badge badge-primary">Detail</a>
+                                </td>
+                            </tr>
+                        <?php } ?>
+
                     </tbody>
                 </table>
             </div>
