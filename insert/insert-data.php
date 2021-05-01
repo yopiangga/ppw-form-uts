@@ -2,10 +2,9 @@
 
 session_start();
 
-if ($_SESSION['status'] != "login") {
+if(!isset($_SESSION['status']) || $_SESSION['status'] != "login"){
     header('Location: ./../read/read-data.php');
 }
-
 
 ?>
 

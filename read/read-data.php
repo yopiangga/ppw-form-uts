@@ -4,7 +4,7 @@ session_start();
 
 include("./../config/connection.php");
 
-if ($_SESSION['status'] != "login") {
+if(!isset($_SESSION['status']) || $_SESSION['status'] != "login"){
     $_SESSION['status'] = "";
 }
 

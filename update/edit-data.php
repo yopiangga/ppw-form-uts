@@ -3,9 +3,10 @@ include("./../config/connection.php");
 
 session_start();
 
-if (!isset($_GET['id']) || $_SESSION['status'] != "login") {
+if(!isset($_GET['id']) || !isset($_SESSION['status']) || $_SESSION['status'] != "login"){
     header('Location: ./../read/read-data.php');
 }
+
 
 $id = $_GET['id'];
 $sql = "SELECT * FROM mahasiswa WHERE id=$id";
