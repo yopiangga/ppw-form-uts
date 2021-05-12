@@ -642,10 +642,20 @@
     line-height: 28px;
     margin-bottom: 30px;
   }
-  .readData-page .main .content .content-left button {
+  .readData-page .main .content .content-left .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .readData-page .main .content .content-left .button button {
     margin-left: auto;
     margin-right: auto;
     padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 5px;
     text-decoration: none;
     color: white;
@@ -658,7 +668,7 @@
     font-weight: 500;
     cursor: pointer;
   }
-  .readData-page .main .content .content-left button:hover {
+  .readData-page .main .content .content-left .button button:hover {
     -webkit-transition: 300ms;
     transition: 300ms;
     background-color: #071535;
@@ -777,6 +787,9 @@
     text-align: left;
     font-weight: 400;
   }
+  .readData-page .table-section .content .table table tbody tr td img {
+    width: 80px;
+  }
   .readData-page .table-section .content .table table tbody tr .skor {
     width: 23%;
     display: -webkit-box;
@@ -787,13 +800,20 @@
             justify-content: center;
   }
   .readData-page .table-section .content .table table tbody tr .skor .badge {
-    padding: 5px 10px 5px 10px;
+    padding: 0px 10px 0px 10px;
     border-radius: 5px;
     text-decoration: none;
     color: white;
     font-size: 14px;
     margin-left: 2px;
     margin-right: 2px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .readData-page .table-section .content .table table tbody tr .skor .badge-danger {
     background-color: salmon;
@@ -826,14 +846,13 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 500px;
   }
   .readData-page .form-section .content .form-box {
     position: relative;
     z-index: 1;
     top: -80px;
     width: 80%;
-    min-height: 500px;
+    min-height: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -902,6 +921,30 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .form-group .box-profile .imgProfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .readData-page .form-section .content .form-box .form-biodata .row .form-group .box-profile .lblImgProfile {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #A5AEBC;
+    border-radius: 20px;
+    background-color: rgba(7, 21, 53, 0.01);
   }
   .readData-page .form-section .content .form-box .form-biodata .row .form-group label {
     margin-bottom: 10px;
@@ -1059,6 +1102,40 @@
   .detailStudent-page .form-section .content .form-box .form-biodata .row .form-group h4 {
     font-weight: 500;
     font-size: 16px;
+  }
+  .detailStudent-page .form-section .content .form-box .form-biodata .row .form-group img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  .detailStudent-page .form-section .content .form-box .form-biodata .row .form-group .btn-download {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #3554D1;
+    border: 1px solid #3554D1;
+    cursor: pointer;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .detailStudent-page .form-section .content .form-box .form-biodata .row .form-group .btn-download:hover {
+    background-color: transparent;
+    color: #3554D1;
+    -webkit-transition: 300ms;
+    transition: 300ms;
   }
   #mobile {
     display: none;

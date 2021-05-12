@@ -91,7 +91,7 @@ if($email == "" && $password == ""){
             </div>
         </div>
         <div class="complete-right">
-            <form class="container" action="./config_insert.php" method="POST">
+            <form class="container" action="./config_insert.php" method="POST" enctype="multipart/form-data">
                 <section class="form form-1">
                     <div class="content">
                         <div class="image">
@@ -196,6 +196,14 @@ if($email == "" && $password == ""){
                                     <div class="form-group">
                                         <label for="">Address</label>
                                         <textarea name="address" id="address" cols="30" rows="4"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="display: none;">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="">Image</label>
+                                        <textarea name="imgProfile" id="address" cols="30" rows="4"></textarea>
                                     </div>
                                 </div>
                             </div>

@@ -158,7 +158,17 @@ if (mysqli_num_rows($query) < 1) {
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Image Profile</label>
+                                <div class="box-profile">
+                                    <label for="imgProfile" class="lblImgProfile">Image Upload</label>
+                                    <input class="imgProfile" name="imgProfile" id="imgProfile" type="file"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <button class="btn-submit" name="submit" type="submit">UPDATE DATA</button>
 

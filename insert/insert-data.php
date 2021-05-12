@@ -46,10 +46,10 @@ if(!isset($_SESSION['status']) || $_SESSION['status'] != "login"){
     <div class="form-section">
         <div class="content">
             <div class="form-box">
-                <h2>Edit Biodata</h2>
+                <h2>Create Data</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis!</p>
 
-                <form class="form-biodata" action="./config_insert.php" method="POST">
+                <form class="form-biodata" action="./config_insert.php" method="POST" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
@@ -146,7 +146,17 @@ if(!isset($_SESSION['status']) || $_SESSION['status'] != "login"){
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Image Profile</label>
+                                <div class="box-profile">
+                                    <label for="imgProfile" class="lblImgProfile">Image Upload</label>
+                                    <input class="imgProfile" name="imgProfile" id="imgProfile" type="file"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <button class="btn-submit" name="submit" type="submit">SUBMIT</button>
 

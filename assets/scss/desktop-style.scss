@@ -644,27 +644,34 @@
                         margin-bottom: 30px;
                     }
 
-                    button {
-                        margin-left: auto;
-                        margin-right: auto;
-                        padding: 10px 10px 10px 10px;
-                        border-radius: 5px;
-                        text-decoration: none;
-                        color: white;
-                        font-size: 14px;
-                        width: 200px;
-                        background-color: $colorPrimary;
-                        border: 1px solid $colorPrimary;
-                        transition: 300ms;
-                        font-weight: 500;
-                        cursor: pointer;
-                    }
+                    .button {
+                        display: flex;
+                        justify-content: center;
 
-                    button:hover {
-                        transition: 300ms;
-                        background-color: $colorDark;
-                        color: white;
-                        border: 1px solid $colorPrimary;
+                        button {
+                            margin-left: auto;
+                            margin-right: auto;
+                            padding: 10px 10px 10px 10px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            color: white;
+                            font-size: 14px;
+                            width: 200px;
+                            background-color: $colorPrimary;
+                            border: 1px solid $colorPrimary;
+                            transition: 300ms;
+                            font-weight: 500;
+                            cursor: pointer;
+                        }
+    
+                        button:hover {
+                            transition: 300ms;
+                            background-color: $colorDark;
+                            color: white;
+                            border: 1px solid $colorPrimary;
+                        }
                     }
                 }
             }
@@ -752,6 +759,10 @@
                                     width: 24%;
                                     text-align: left;
                                     font-weight: 400;
+
+                                    img {
+                                        width: 80px;
+                                    }
                                 }
 
                                 .skor {
@@ -760,13 +771,16 @@
                                     justify-content: center;
 
                                     .badge {
-                                        padding: 5px 10px 5px 10px;
+                                        padding: 0px 10px 0px 10px;
                                         border-radius: 5px;
                                         text-decoration: none;
                                         color: white;
                                         font-size: 14px;
                                         margin-left: 2px;
                                         margin-right: 2px;
+                                        height: 30px;
+                                        display: flex;
+                                        align-items: center;
                                     }
 
                                     .badge-danger {
@@ -803,14 +817,13 @@
                 position: relative;
                 display: flex;
                 justify-content: center;
-                min-height: 500px;
 
                 .form-box {
                     position: relative;
                     z-index: 1;
                     top: -80px;
                     width: 80%;
-                    min-height: 500px;
+                    min-height: 350px;
                     display: flex;
                     flex-direction: column;
                     background-color: white;
@@ -859,6 +872,29 @@
                             .form-group {
                                 display: flex;
                                 flex-direction: column;
+                                
+                                .box-profile {
+
+                                    .imgProfile {
+                                        width: 0.1px;
+                                        height: 0.1px;
+                                        opacity: 0;
+                                        overflow: hidden;
+                                        position: absolute;
+                                        z-index: -1;
+                                    }
+
+                                    .lblImgProfile {
+                                        width: 100%;
+                                        height: 100px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border: 1px solid $colorGray;
+                                        border-radius: 20px;
+                                        background-color: rgba($color: $colorDark, $alpha: 0.01);
+                                    }
+                                }
 
                                 label {
                                     margin-bottom: 10px;
@@ -1007,6 +1043,35 @@
                                 h4 {
                                     font-weight: 500;
                                     font-size: 16px;
+                                }
+
+                                img {
+                                    width: 200px;
+                                    margin-bottom: 10px;
+                                }
+
+                                .btn-download {
+                                    width: 200px;
+                                    height: 40px;
+                                    border-radius: 20px;
+                                    text-decoration: none;
+                                    color: white;
+                                    font-size: 14px;
+                                    margin-left: 2px;
+                                    margin-right: 2px;
+                                    background-color: $colorPrimary;
+                                    border: 1px solid $colorPrimary;
+                                    cursor: pointer;
+                                    transition: 300ms;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+
+                                .btn-download:hover {
+                                    background-color: transparent;
+                                    color: $colorPrimary;
+                                    transition: 300ms;
                                 }
 
                             }

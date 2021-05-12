@@ -8,7 +8,7 @@ if(!isset($_SESSION['status']) || $_SESSION['status'] != "login"){
     $_SESSION['status'] = "";
 }
 
-$result = mysqli_query($conn, "SELECT * FROM mahasiswa ORDER BY id ASC");
+$result = mysqli_query($conn, "SELECT * FROM image ORDER BY id ASC");
 
 ?>
 
@@ -63,29 +63,25 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa ORDER BY id ASC");
                     <thead>
                         <tr>
                             <th class="rank">ID</th>
+                            <th>Image</th>
                             <th>Name</th>
-                            <th>University</th>
-                            <th>Major</th>
+                            <th>Size</th>
+                            <th>Type</th>
                             <th class="skor">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                        while ($mahasiswa = mysqli_fetch_array($result)) { ?>
+                        while ($image = mysqli_fetch_array($result)) { ?>
                             <tr>
-                                <th><?= $mahasiswa['id'] ?></th>
-                                <td><?= $mahasiswa['fname'] . " " . $mahasiswa['lname'] ?></td>
-                                <td><?= $mahasiswa['university'] ?></td>
-                                <td><?= $mahasiswa['major'] ?></td>
+                                <th><?= $image['id'] ?></th>
+                                <td><img src="./../assets/images/profile/<?=$image['name']?>" alt=""></td>
+                                <td><?= $image['name'] ?></td>
+                                <td><?= $image['size'] ?></td>
+                                <td><?= $image['type'] ?></td>
                                 <td class="skor">
-                                    <?php
-                                    if ($_SESSION['status'] == "login") {
-                                    ?>
-                                        <a href="./../delete/config_delete.php?id=<?= $mahasiswa['id'] ?>" class="badge badge-danger">Delete</a>
-                                        <a href="./../update/edit-data.php?id=<?= $mahasiswa['id'] ?>" class="badge badge-warning">Edit</a>
-                                    <?php } ?>
-
-                                    <a href="./../read/detail-student.php?id=<?= $mahasiswa['id'] ?>" class="badge badge-primary">Detail</a>
+                                    <a href="./../delete/config_delete_image.php?id=<?= $image['id'] ?>" class="badge badge-danger">Delete</a>
+                                    <a href="./../assets/images/profile/<?=$image['name']?>" class="badge badge-primary" download>Download</a>
                                 </td>
                             </tr>
                         <?php } ?>
